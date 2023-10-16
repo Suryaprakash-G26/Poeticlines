@@ -7,7 +7,7 @@ fetch(Api)
     const poet = data[0].lines;
     poet.forEach(element => {
       console.log(element);
-      const imageUrl = `https://source.unsplash.com/200x200/?random=${Math.random()}`; // Random image URL with unique query parameter
+      const imageUrl = `https://source.unsplash.com/200x200/?random=${Math.random()}`; 
       Poeticlines(element, imageUrl);
     });
   })
@@ -19,7 +19,7 @@ function Poeticlines(element, imageUrl) {
   container.innerHTML = `
     <div class="card">
       <h1 class="Name">Ozymandias Lines </h1>
-      <img src="${imageUrl}" class="card-img-top" alt="Random Image"> <!-- Random image added here -->
+      <img src="${imageUrl}" class="card-img-top" alt="Random Image"> 
       <div class="card-body">
         <p class="card-text">${element}</p>
       </div>
